@@ -7,7 +7,7 @@ Python tools for sending iMessage/SMS message from a Mac. Check out the blog pos
 <br> 
 
 # Installation
-`pip install mac_imessage`
+`pip install git+https://github.com/ajb3296/imessage.git`
 
 <br>
 
