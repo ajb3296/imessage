@@ -35,7 +35,7 @@ on run {phone_number, image_path}
 tell application "Messages"
     set targetService to 1st service whose service type = {medium}
     set targetBuddy to buddy phone_number of targetService
-    send POSIX file {image_path} to targetBuddy
+    send POSIX file {image_path} as alias to targetBuddy
 end tell
 end run
 """
