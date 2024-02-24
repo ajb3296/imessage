@@ -61,7 +61,7 @@ def send_image(image_path: str, phone_number: str, medium: str):
         raise mac_imessage.exceptions.UnsupportedMediumError( message )
 
     selected_medium = mac_imessage.MEDIUMS[medium.lower()]
-    applescript_code = mac_imessage.BASE_APPLESCRIPT.replace("{medium}", selected_medium)
+    applescript_code = mac_imessage.IMAGE_BASE_APPLESCRIPT.replace("{medium}", selected_medium)
 
     # Verify Phone Number is valid
     phone_number = _get_digits_in_phone_number( phone_number )
